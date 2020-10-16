@@ -1,21 +1,22 @@
-# Download
+# Marcus Garpehäll Wiklund
+## Download
 ```
 // Using Git Bash
-git clone https://github.com/macksterino/project-name && cd ./project-name && code .
+git clone https://github.com/macksterino/publiceringsverktyg-tenta && cd ./publiceringsverktyg-tenta && code .
 ```
 
-# Develop
+## Develop
 ```
 // FRONTEND
-npm install && npm run dev
+cd ./frontend/portfolio-gui && npm install && npm run dev
 ```
 
 ```
 // BACKEND
-npm run dev
+cd ../../backend/portfolio-api && npm run develop
 ```
 
-# Publish
+## Publish
 ```
 npm run clean && npm run build
 ```
