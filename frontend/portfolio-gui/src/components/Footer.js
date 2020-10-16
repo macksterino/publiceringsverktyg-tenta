@@ -1,8 +1,10 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
+import { FooterWrapper } from "../elements"
+
 const Footer = () => {
   return (
-    <footer className="footer">
+    <FooterWrapper>
       <div>
         <SocialLinks styleClass="footer-links"></SocialLinks>
         <h4>
@@ -10,7 +12,7 @@ const Footer = () => {
           <span>Marcus Garpehäll Wiklund</span>all right reserved
       </h4>
       </div>
-    </footer>
+    </FooterWrapper>
   )
 }
 

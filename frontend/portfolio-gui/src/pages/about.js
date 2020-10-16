@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 import SEO from "../components/SEO"
+import { AboutWrapper } from "../elements"
 
 const About = ({
   data: {
@@ -14,10 +15,10 @@ const About = ({
   return (
     <Layout>
       <SEO title="About" description="About Me" />
-      <section className="about-page">
+      <AboutWrapper>
         <div className="section-center about-center">
-          <Image fluid={image.childImageSharp.fluid} 
-          className="about-img" />
+          <Image fluid={image.childImageSharp.fluid}
+            className="about-img" />
           <article className="about-text">
             <Title title={title} />
             <p>{info}</p>
@@ -30,7 +31,7 @@ const About = ({
             </div>
           </article>
         </div>
-      </section>
+      </AboutWrapper>
     </Layout>
   )
 }

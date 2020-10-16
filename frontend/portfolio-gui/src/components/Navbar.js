@@ -2,9 +2,11 @@ import React from "react"
 import logo from "../assets/logo.svg"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
+import { NavWrapper } from "../elements"
+
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <nav className="navbar">
+    <NavWrapper>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="logo" />
@@ -14,7 +16,7 @@ const Navbar = ({ toggleSidebar }) => {
         </div>
         <PageLinks styleClass="nav-links"></PageLinks>
       </div>
-    </nav>
+    </NavWrapper>
   )
 }
 
